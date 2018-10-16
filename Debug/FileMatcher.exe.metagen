@@ -1,0 +1,40 @@
+  FileMatcher.Form2.resources - Embedded, ContainedInManifestFile, 
+  FileMatcher.MainForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly FileMatcher, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly GongShell, Version=0.6.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly MaterialSkin, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class FileMatcher.Form2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MaterialSkin.Controls.MaterialForm
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    MaterialSkin.Controls.MaterialRaisedButton btnDeleteRight : Public
+    Boolean rightButtonClicked : Public
+    MaterialSkin.Controls.MaterialRaisedButton btnDeleteLeft : Public
+    Boolean leftButtonClicked : Public
+Class FileMatcher.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MaterialSkin.Controls.MaterialForm
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

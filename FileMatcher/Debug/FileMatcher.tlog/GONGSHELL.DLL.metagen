@@ -1,0 +1,1305 @@
+  GongSolutions.Shell.FileDialogToolbar.resources - Embedded, ContainedInManifestFile, 
+  GongSolutions.Shell.Properties.Resources.resources - Embedded, ContainedInManifestFile, 
+  GongSolutions.Shell.PlacesToolbar.resources - Embedded, ContainedInManifestFile, 
+  GongSolutions.Shell.ShellItemBrowseForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v2.0.50727
+Assembly GongShell, Version=0.6.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Struct GongSolutions.Shell.Interop.ILD: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.ILD NORMAL = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ILD TRANSPARENT = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ILD MASK = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ILD IMAGE = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ILD ROP = 64 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ILD BLEND25 = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ILD BLEND50 = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ILD OVERLAYMASK = 3840 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ILD PRESERVEALPHA = 4096 : Public, Static, Literal, HasDefault
+Class GongSolutions.Shell.Interop.ComCtl32: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ImageList_Draw(IntPtr, Int32, IntPtr, Int32, Int32, UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ImageList_GetIconSize(IntPtr, Int32&(Out), Int32&(Out)): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class GongSolutions.Shell.PlacesToolbar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    GongSolutions.Shell.ShellView ShellView 'get set' : 
+    Boolean AllowDrop 'get set' : 
+    Boolean AutoScroll 'get set' : 
+    System.Drawing.Size AutoScrollMargin 'get set' : 
+    System.Drawing.Size AutoScrollMinSize 'get set' : 
+    Boolean AutoSize 'get set' : 
+    System.Windows.Forms.AutoSizeMode AutoSizeMode 'get set' : 
+    System.Windows.Forms.AutoValidate AutoValidate 'get set' : 
+    System.Drawing.Image BackgroundImage 'get set' : 
+    System.Windows.Forms.ImageLayout BackgroundImageLayout 'get set' : 
+    System.Windows.Forms.BorderStyle BorderStyle 'get set' : 
+    Boolean CausesValidation 'get set' : 
+  Events:
+    GongSolutions.Shell.FilterItemEventHandler FilterItem: 
+  Methods:
+    Add(ShellItem): PrivateScope, Public, HideBySig
+    get_ShellView(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShellView(ShellView): PrivateScope, Public, HideBySig, SpecialName
+    add_FilterItem(FilterItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FilterItem(FilterItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowDrop(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_AllowDrop(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_AutoScroll(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_AutoScroll(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_AutoScrollMargin(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoScrollMargin(Size): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoScrollMinSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoScrollMinSize(Size): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoSize(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_AutoSize(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_AutoSizeMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoSizeMode(AutoSizeMode): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoValidate(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_AutoValidate(AutoValidate): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BackgroundImage(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImage(Image): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BackgroundImageLayout(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImageLayout(ImageLayout): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BorderStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_BorderStyle(BorderStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_CausesValidation(): PrivateScope, Public, HideBySig, SpecialName
+    set_CausesValidation(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Interface GongSolutions.Shell.Interop.IEnumIDList: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    Next(UInt32, IntPtr&(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Skip(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Reset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Clone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct GongSolutions.Shell.Interop.FCW: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.FCW FCW_STATUS = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FCW FCW_TOOLBAR = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FCW FCW_TREE = 3 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FCW FCW_INTERNETBAR = 6 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FCW FCW_PROGRESS = 8 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.SBSP: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.SBSP SBSP_DEFBROWSER = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_SAMEBROWSER = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_NEWBROWSER = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_DEFMODE = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_OPENMODE = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_EXPLOREMODE = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_HELPMODE = 64 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_NOTRANSFERHIST = 128 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_ABSOLUTE = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_RELATIVE = 4096 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_PARENT = 8192 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_NAVIGATEBACK = 16384 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_NAVIGATEFORWARD = 32768 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_ALLOW_AUTONAVIGATE = 65536 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_CALLERUNTRUSTED = 8388608 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_TRUSTFIRSTDOWNLOAD = 16777216 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_UNTRUSTEDFORDOWNLOAD = 33554432 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_NOAUTOSELECT = 67108864 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_WRITENOHISTORY = 134217728 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_TRUSTEDFORACTIVEX = 268435456 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_REDIRECT = 1073741824 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SBSP SBSP_INITIATEDBYHLINKFRAME = 2147483648 : Public, Static, Literal, HasDefault
+Interface GongSolutions.Shell.Interop.IShellBrowser: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    GetWindow(IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ContextSensitiveHelp(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InsertMenusSB(IntPtr, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetMenuSB(IntPtr, IntPtr, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveMenusSB(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetStatusTextSB(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnableModelessSB(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TranslateAcceleratorSB(IntPtr, UInt16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BrowseObject(IntPtr, SBSP): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetViewStateStream(UInt32, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetControlWindow(FCW, IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SendControlMsg(FCW, MSG, UInt32, UInt32, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    QueryActiveShellView(IShellView&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnViewWindowActive(IShellView): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetToolbarItems(IntPtr, UInt32, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GongSolutions.Shell.Interop.CoClass: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GongSolutions.Shell.Interop.CoClass+FileOpenDialog: AutoLayout, AnsiClass, Class, NestedPublic, Import, BeforeFieldInit
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GongSolutions.Shell.Interop.CoClass+KnownFolderManager: AutoLayout, AnsiClass, Class, NestedPublic, Import, BeforeFieldInit
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Struct GongSolutions.Shell.Interop.SVGIO: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.SVGIO SVGIO_BACKGROUND = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SVGIO SVGIO_SELECTION = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SVGIO SVGIO_ALLVIEW = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SVGIO SVGIO_CHECKED = 3 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SVGIO SVGIO_TYPE_MASK = 15 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SVGIO SVGIO_FLAG_VIEWORDER = 2147483648 : Public, Static, Literal, HasDefault
+Interface GongSolutions.Shell.Interop.IShellView: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    GetWindow(IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ContextSensitiveHelp(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TranslateAcceleratorA(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnableModeless(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UIActivate(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Refresh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreateViewWindow(IShellView, FOLDERSETTINGS&, IShellBrowser, Rectangle&, IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DestroyViewWindow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetCurrentInfo(FOLDERSETTINGS&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddPropertySheetPages(UInt32(In, HasFieldMarshal), IntPtr&(In), IntPtr(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveViewState(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SelectItem(IntPtr, SVSI(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetItemObject(SVGIO(In), Guid(In, HasFieldMarshal), IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface GongSolutions.Shell.Interop.IKnownFolderManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    FolderIdFromCsidl(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FolderIdToCsidl(Guid(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetFolderIds(IntPtr&(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetFolder(Guid(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetFolderByName(String(In), IKnownFolder&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RegisterFolder(Guid(In, HasFieldMarshal), IntPtr(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UnregisterFolder(Guid(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindFolderFromPath(String(In), FFFP_MODE(In), IKnownFolder&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindFolderFromIDList(IntPtr(In), IKnownFolder&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Redirect(Guid(In, HasFieldMarshal), IntPtr(In), Int32(In), String(In), UInt32(In), Guid[](In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GongSolutions.Shell.Interop.BHID: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Guid SFObject 'get ' : 
+    System.Guid SFUIObject 'get ' : 
+  Methods:
+    get_SFObject(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SFUIObject(): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct GongSolutions.Shell.Interop.COMDLG_FILTERSPEC: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, UnicodeClass, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    System.String pszName : Public
+    System.String pszSpec : Public
+Struct GongSolutions.Shell.Interop.FDE_OVERWRITE_RESPONSE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.FDE_OVERWRITE_RESPONSE FDEOR_DEFAULT = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FDE_OVERWRITE_RESPONSE FDEOR_ACCEPT = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FDE_OVERWRITE_RESPONSE FDEOR_REFUSE = 2 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.FDE_SHAREVIOLATION_RESPONSE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.FDE_SHAREVIOLATION_RESPONSE FDESVR_DEFAULT = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FDE_SHAREVIOLATION_RESPONSE FDESVR_ACCEPT = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FDE_SHAREVIOLATION_RESPONSE FDESVR_REFUSE = 2 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.FDAP: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.FDAP FDAP_BOTTOM = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FDAP FDAP_TOP = 1 : Public, Static, Literal, HasDefault
+Interface GongSolutions.Shell.Interop.IFileDialog: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    Show(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetFileTypes(UInt32, COMDLG_FILTERSPEC[](HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetFileTypeIndex(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetFileTypeIndex(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Advise(IFileDialogEvents): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Unadvise(UInt16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetOptions(UInt16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetDefaultFolder(IShellItem): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetFolder(IShellItem): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetFolder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetCurrentSelection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetFileName(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetFileName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetTitle(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetOkButtonLabel(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetFileNameLabel(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetResult(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddPlace(IShellItem, FDAP): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetDefaultExtension(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Close(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetClientGuid(Guid): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ClearClientData(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetFilter(IShellItemFilter): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface GongSolutions.Shell.Interop.IFileDialogEvents: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    OnFileOk(IFileDialog): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnFolderChanging(IFileDialog, IShellItem): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnFolderChange(IFileDialog): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnSelectionChange(IFileDialog): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnShareViolation(IFileDialog, IShellItem, FDE_SHAREVIOLATION_RESPONSE&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnTypeChange(IFileDialog): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnOverwrite(IFileDialog, IShellItem, FDE_OVERWRITE_RESPONSE&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface GongSolutions.Shell.Interop.IShellItemFilter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    IncludeItem(IShellItem): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetEnumFlagsForItem(IShellItem, SHCONTF&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct GongSolutions.Shell.Interop.OLECMDTEXT: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, UnicodeClass, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 cmdtextf : Public
+    UInt32 cwActual : Public
+    UInt32 cwBuf : Public
+    Char rgwz : Public, HasFieldMarshal
+Struct GongSolutions.Shell.Interop.OLECMD: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 cmdID : Public
+    UInt32 cmdf : Public
+Interface GongSolutions.Shell.Interop.IOleCommandTarget: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    QueryStatus(Guid&, UInt32, OLECMD[](HasFieldMarshal), OLECMDTEXT&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Exec(Guid&, UInt32, UInt32, Object&, Object&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GongSolutions.Shell.FileNameComboBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.ComboBox
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    GongSolutions.Shell.FileFilterComboBox FilterControl 'get set' : 
+    GongSolutions.Shell.ShellView ShellView 'get set' : 
+  Events:
+    System.EventHandler FileNameEntered: 
+  Methods:
+    get_FilterControl(): PrivateScope, Public, HideBySig, SpecialName
+    set_FilterControl(FileFilterComboBox): PrivateScope, Public, HideBySig, SpecialName
+    get_ShellView(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShellView(ShellView): PrivateScope, Public, HideBySig, SpecialName
+    add_FileNameEntered(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FileNameEntered(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+Class GongSolutions.Shell.ShellComboBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Control
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Editable 'get set' : 
+    Boolean ShowFileSystemPath 'get set' : 
+    GongSolutions.Shell.ShellItem RootFolder 'get set' : 
+    GongSolutions.Shell.ShellItem SelectedFolder 'get set' : 
+    GongSolutions.Shell.ShellView ShellView 'get set' : 
+  Events:
+    System.EventHandler Changed: 
+    GongSolutions.Shell.FilterItemEventHandler FilterItem: 
+  Methods:
+    get_Editable(): PrivateScope, Public, HideBySig, SpecialName
+    set_Editable(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowFileSystemPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowFileSystemPath(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_RootFolder(): PrivateScope, Public, HideBySig, SpecialName
+    set_RootFolder(ShellItem): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectedFolder(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectedFolder(ShellItem): PrivateScope, Public, HideBySig, SpecialName
+    get_ShellView(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShellView(ShellView): PrivateScope, Public, HideBySig, SpecialName
+    add_Changed(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Changed(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_FilterItem(FilterItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FilterItem(FilterItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+Class GongSolutions.Shell.Interop.ShlWapi: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    StrRetToBuf(STRRET&, IntPtr, StringBuilder, UInt32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Struct GongSolutions.Shell.Interop.CSIDL: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.CSIDL DESKTOP = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL INTERNET = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL PROGRAMS = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL CONTROLS = 3 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL PRINTERS = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL PERSONAL = 5 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL FAVORITES = 6 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL STARTUP = 7 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL RECENT = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL SENDTO = 9 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL BITBUCKET = 10 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL STARTMENU = 11 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL MYDOCUMENTS = 5 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL MYMUSIC = 13 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL MYVIDEO = 14 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL DESKTOPDIRECTORY = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL DRIVES = 17 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL NETWORK = 18 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL NETHOOD = 19 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL FONTS = 20 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL TEMPLATES = 21 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_STARTMENU = 22 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_PROGRAMS = 23 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_STARTUP = 24 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_DESKTOPDIRECTORY = 25 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL APPDATA = 26 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL PRINTHOOD = 27 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL LOCAL_APPDATA = 28 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL ALTSTARTUP = 29 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_ALTSTARTUP = 30 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_FAVORITES = 31 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL INTERNET_CACHE = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COOKIES = 33 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL HISTORY = 34 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_APPDATA = 35 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL WINDOWS = 36 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL SYSTEM = 37 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL PROGRAM_FILES = 38 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL MYPICTURES = 39 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL PROFILE = 40 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL SYSTEMX86 = 41 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL PROGRAM_FILESX86 = 42 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL PROGRAM_FILES_COMMON = 43 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL PROGRAM_FILES_COMMONX86 = 44 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_TEMPLATES = 45 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_DOCUMENTS = 46 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_ADMINTOOLS = 47 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL ADMINTOOLS = 48 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL CONNECTIONS = 49 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_MUSIC = 53 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_PICTURES = 54 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_VIDEO = 55 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL RESOURCES = 56 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL RESOURCES_LOCALIZED = 57 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMMON_OEM_LINKS = 58 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL CDBURN_AREA = 59 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CSIDL COMPUTERSNEARME = 61 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.ERROR: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.ERROR SUCCESS = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ERROR FILE_EXISTS = 80 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ERROR BAD_PATHNAME = 161 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ERROR ALREADY_EXISTS = 183 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ERROR FILENAME_EXCED_RANGE = 206 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.ERROR CANCELLED = 1223 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.FFFP_MODE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.FFFP_MODE EXACTMATCH = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FFFP_MODE NEARESTPARENTMATCH = 1 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.FOLDERFLAGS: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.FOLDERFLAGS AUTOARRANGE = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS ABBREVIATEDNAMES = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS SNAPTOGRID = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS OWNERDATA = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS BESTFITWINDOW = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS DESKTOP = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS SINGLESEL = 64 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS NOSUBFOLDERS = 128 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS TRANSPARENT = 256 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS NOCLIENTEDGE = 512 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS NOSCROLL = 1024 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS ALIGNLEFT = 2048 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS NOICONS = 4096 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS SHOWSELALWAYS = 8192 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS NOVISIBLE = 16384 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS SINGLECLICKACTIVATE = 32768 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS NOWEBVIEW = 65536 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS HIDEFILENAMES = 131072 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERFLAGS CHECKSELECT = 262144 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.FOLDERVIEWMODE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.FOLDERVIEWMODE FIRST = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERVIEWMODE ICON = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERVIEWMODE SMALLICON = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERVIEWMODE LIST = 3 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERVIEWMODE DETAILS = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERVIEWMODE THUMBNAIL = 5 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERVIEWMODE TILE = 6 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERVIEWMODE THUMBSTRIP = 7 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.FOLDERVIEWMODE LAST = 7 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.SHCONTF: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.SHCONTF FOLDERS = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCONTF NONFOLDERS = 64 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCONTF INCLUDEHIDDEN = 128 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCONTF INIT_ON_FIRST_NEXT = 256 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCONTF NETPRINTERSRCH = 512 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCONTF SHAREABLE = 1024 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCONTF STORAGE = 2048 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.SFGAO: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.SFGAO CANCOPY = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO CANMOVE = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO CANLINK = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO STORAGE = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO CANRENAME = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO CANDELETE = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO HASPROPSHEET = 64 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO DROPTARGET = 256 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO CAPABILITYMASK = 375 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO ENCRYPTED = 8192 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO ISSLOW = 16384 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO GHOSTED = 32768 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO LINK = 65536 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO SHARE = 131072 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO READONLY = 262144 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO HIDDEN = 524288 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO DISPLAYATTRMASK = 1032192 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO STREAM = 4194304 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO STORAGEANCESTOR = 8388608 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO VALIDATE = 16777216 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO REMOVABLE = 33554432 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO COMPRESSED = 67108864 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO BROWSABLE = 134217728 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO FILESYSANCESTOR = 268435456 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO FOLDER = 536870912 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO FILESYSTEM = 1073741824 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO HASSUBFOLDER = 2147483648 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO CONTENTSMASK = 2147483648 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SFGAO STORAGECAPMASK = 1891958792 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.SHCIDS: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.SHCIDS ALLFIELDS = 2147483648 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCIDS CANONICALONLY = 268435456 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCIDS BITMASK = 4294901760 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCIDS COLUMNMASK = 65535 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.SHCNE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.SHCNE RENAMEITEM = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE CREATE = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE DELETE = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE MKDIR = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE RMDIR = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE MEDIAINSERTED = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE MEDIAREMOVED = 64 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE DRIVEREMOVED = 128 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE DRIVEADD = 256 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE NETSHARE = 512 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE NETUNSHARE = 1024 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE ATTRIBUTES = 2048 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE UPDATEDIR = 4096 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE UPDATEITEM = 8192 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE SERVERDISCONNECT = 16384 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE UPDATEIMAGE = 32768 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE DRIVEADDGUI = 65536 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE RENAMEFOLDER = 131072 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE FREESPACE = 262144 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE EXTENDED_EVENT = 67108864 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE ASSOCCHANGED = 134217728 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE DISKEVENTS = 145439 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE GLOBALEVENTS = 201687520 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE ALLEVENTS = 2147483647 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNE INTERRUPT = 2147483648 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.SHCNRF: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.SHCNRF InterruptLevel = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNRF ShellLevel = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNRF RecursiveInterrupt = 4096 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHCNRF NewDelivery = 32768 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.SHGNO: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.SHGNO NORMAL = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHGNO INFOLDER = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHGNO FOREDITING = 4096 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHGNO FORADDRESSBAR = 16384 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SHGNO FORPARSING = 32768 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.SICHINT: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.SICHINT DISPLAY = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SICHINT CANONICAL = 268435456 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SICHINT ALLFIELDS = 2147483648 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.SIGDN: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.SIGDN NORMALDISPLAY = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SIGDN PARENTRELATIVEPARSING = 2147581953 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SIGDN PARENTRELATIVEFORADDRESSBAR = 2147598337 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SIGDN DESKTOPABSOLUTEPARSING = 2147647488 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SIGDN PARENTRELATIVEEDITING = 2147684353 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SIGDN DESKTOPABSOLUTEEDITING = 2147794944 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SIGDN FILESYSPATH = 2147844096 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SIGDN URL = 2147909632 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.SVSI: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.SVSI SVSI_DESELECT = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.SVSI SVSI_SELECT = 1 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.FOLDERSETTINGS: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    GongSolutions.Shell.Interop.FOLDERVIEWMODE ViewMode : Public
+    GongSolutions.Shell.Interop.FOLDERFLAGS fFlags : Public
+Struct GongSolutions.Shell.Interop.KNOWNFOLDER_DEFINITION: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, UnicodeClass, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 category : Public
+    IntPtr pszName : Public
+    IntPtr pszDescription : Public
+    System.Guid fidParent : Public
+    IntPtr pszRelativePath : Public
+    IntPtr pszParsingName : Public
+    IntPtr pszTooltip : Public
+    IntPtr pszLocalizedName : Public
+    IntPtr pszIcon : Public
+    IntPtr pszSecurity : Public
+    UInt32 dwAttributes : Public
+    Int32 kfdFlags : Public
+    System.Guid ftidType : Public
+Struct GongSolutions.Shell.Interop.SHChangeNotifyEntry: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    IntPtr pidl : Public
+    Boolean fRecursive : Public
+Struct GongSolutions.Shell.Interop.SHFILEINFO: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    IntPtr hIcon : Public
+    Int32 iIcon : Public
+    UInt32 dwAttributes : Public
+    System.String szDisplayName : Public, HasFieldMarshal
+    System.String szTypeName : Public, HasFieldMarshal
+Struct GongSolutions.Shell.Interop.SHNOTIFYSTRUCT: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    IntPtr dwItem1 : Public
+    IntPtr dwItem2 : Public
+Struct GongSolutions.Shell.Interop.STRRET: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 uType : Public
+    IntPtr pOleStr : Public
+    IntPtr pStr : Public
+    UInt32 uOffset : Public
+    IntPtr cStr : Public
+Struct GongSolutions.Shell.Interop.HResult: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.HResult DRAGDROP_S_CANCEL = 262401 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.HResult DRAGDROP_S_DROP = 262400 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.HResult DRAGDROP_S_USEDEFAULTCURSORS = 262402 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.HResult DATA_S_SAMEFORMATETC = 262448 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.HResult S_OK = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.HResult S_FALSE = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.HResult E_NOINTERFACE = -2147467262 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.HResult E_NOTIMPL = -2147467263 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.HResult OLE_E_ADVISENOTSUPPORTED = 80040003 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.HResult MK_E_NOOBJECT = -2147221019 : Public, Static, Literal, HasDefault
+Interface GongSolutions.Shell.Interop.IKnownFolder: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    GetId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetCategory(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetShellItem(UInt16(In), Guid(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPath(UInt16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetPath(UInt16, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetIDList(UInt16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetFolderType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetRedirectionCapabilities(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetFolderDefinition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GongSolutions.Shell.ShellItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Uri): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(SpecialFolder): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GongSolutions.Shell.ShellItem, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GongSolutions.Shell.Interop.IShellItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[GongSolutions.Shell.ShellItem]
+    System.Collections.IEnumerable
+  Properties:
+    GongSolutions.Shell.ShellItem Item [System.String] 'get ' : 
+    GongSolutions.Shell.Interop.IShellItem ComInterface 'get ' : 
+    System.String DisplayName 'get ' : 
+    System.String FileSystemPath 'get ' : 
+    Boolean HasSubFolders 'get ' : 
+    Boolean IsFileSystem 'get ' : 
+    Boolean IsFileSystemAncestor 'get ' : 
+    Boolean IsFolder 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    GongSolutions.Shell.ShellItem Parent 'get ' : 
+    System.String ParsingName 'get ' : 
+    IntPtr Pidl 'get ' : 
+    System.Drawing.Icon ShellIcon 'get ' : 
+    System.String ToolTipText 'get ' : 
+    GongSolutions.Shell.ShellItem Desktop 'get ' : 
+  Methods:
+    Compare(ShellItem): PrivateScope, Public, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetDisplayName(SIGDN): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(SHCONTF): PrivateScope, Public, HideBySig
+    GetIDataObject(): PrivateScope, Public, HideBySig
+    GetIDropTarget(Control): PrivateScope, Public, HideBySig
+    GetIShellFolder(): PrivateScope, Public, HideBySig
+    GetSystemImageListIndex(ShellIconType, ShellIconFlags): PrivateScope, Public, HideBySig
+    IsImmediateParentOf(ShellItem): PrivateScope, Public, HideBySig
+    IsParentOf(ShellItem): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    ToUri(): PrivateScope, Public, HideBySig
+    get_Item(String): PrivateScope, Public, HideBySig, SpecialName
+    op_Inequality(ShellItem, ShellItem): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(ShellItem, ShellItem): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ComInterface(): PrivateScope, Public, HideBySig, SpecialName
+    get_DisplayName(): PrivateScope, Public, HideBySig, SpecialName
+    get_FileSystemPath(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasSubFolders(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsFileSystem(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsFileSystemAncestor(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsFolder(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, HideBySig, SpecialName
+    get_Parent(): PrivateScope, Public, HideBySig, SpecialName
+    get_ParsingName(): PrivateScope, Public, HideBySig, SpecialName
+    get_Pidl(): PrivateScope, Public, HideBySig, SpecialName
+    get_ShellIcon(): PrivateScope, Public, HideBySig, SpecialName
+    get_ToolTipText(): PrivateScope, Public, HideBySig, SpecialName
+    get_Desktop(): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct GongSolutions.Shell.ShellIconType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.ShellIconType LargeIcon = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.ShellIconType ShellIcon = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.ShellIconType SmallIcon = 1 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.ShellIconFlags: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.ShellIconFlags OpenIcon = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.ShellIconFlags OverlayIndex = 64 : Public, Static, Literal, HasDefault
+Class GongSolutions.Shell.ShellContextMenu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(GongSolutions.Shell.ShellItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GongSolutions.Shell.ShellItem[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    GongSolutions.Shell.Interop.IContextMenu ComInterface 'get set' : 
+  Methods:
+    HandleMenuMessage(Message&): PrivateScope, Public, HideBySig
+    InvokeDelete(): PrivateScope, Public, HideBySig
+    InvokeRename(): PrivateScope, Public, HideBySig
+    Populate(Menu): PrivateScope, Public, HideBySig
+    ShowContextMenu(Control, Point): PrivateScope, Public, HideBySig
+    get_ComInterface(): PrivateScope, Public, HideBySig, SpecialName
+    set_ComInterface(IContextMenu): PrivateScope, Public, HideBySig, SpecialName
+Interface GongSolutions.Shell.Interop.IDropSource: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    QueryContinueDrag(Boolean, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GiveFeedback(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface GongSolutions.Shell.Interop.ICommDlgBrowser: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    OnDefaultCommand(IShellView): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnStateChange(IShellView, CDBOSC): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IncludeObject(IShellView, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GongSolutions.Shell.FileDialogToolbar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    GongSolutions.Shell.ShellItem RootFolder 'get set' : 
+    GongSolutions.Shell.ShellItem SelectedFolder 'get set' : 
+    GongSolutions.Shell.ShellView ShellView 'get set' : 
+  Events:
+    GongSolutions.Shell.FilterItemEventHandler FilterItem: 
+  Methods:
+    get_RootFolder(): PrivateScope, Public, HideBySig, SpecialName
+    set_RootFolder(ShellItem): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectedFolder(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectedFolder(ShellItem): PrivateScope, Public, HideBySig, SpecialName
+    get_ShellView(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShellView(ShellView): PrivateScope, Public, HideBySig, SpecialName
+    add_FilterItem(FilterItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FilterItem(FilterItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+Class GongSolutions.Shell.FileFilterComboBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.ComboBox
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Filter 'get set' : 
+    System.Windows.Forms.ComboBoxStyle DropDownStyle 'get set' : 
+    System.String FilterItems 'get set' : 
+    ObjectCollection Items 'get ' : 
+    GongSolutions.Shell.ShellView ShellView 'get set' : 
+  Methods:
+    get_Filter(): PrivateScope, Public, HideBySig, SpecialName
+    set_Filter(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DropDownStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_DropDownStyle(ComboBoxStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_FilterItems(): PrivateScope, Public, HideBySig, SpecialName
+    set_FilterItems(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Items(): PrivateScope, Public, HideBySig, SpecialName
+    get_ShellView(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShellView(ShellView): PrivateScope, Public, HideBySig, SpecialName
+    GenerateRegex(String): PrivateScope, Public, Static, HideBySig
+Interface GongSolutions.Shell.Interop.IQueryInfo: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    GetInfoTip(Int32, IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetInfoFlags(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GongSolutions.Shell.KnownFolderManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[GongSolutions.Shell.KnownFolder]
+    System.Collections.IEnumerable
+  Methods:
+    FindNearestParent(ShellItem): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetFolder(Guid): PrivateScope, Public, HideBySig
+    GetFolder(String): PrivateScope, Public, HideBySig
+Class GongSolutions.Shell.KnownFolder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(GongSolutions.Shell.Interop.IKnownFolder, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GongSolutions.Shell.Interop.CSIDL, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get ' : 
+    System.String ParsingName 'get ' : 
+  Methods:
+    CreateShellItem(): PrivateScope, Public, HideBySig
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_ParsingName(): PrivateScope, Public, HideBySig, SpecialName
+Interface GongSolutions.Shell.Interop.IShellItem: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    BindToHandler(IntPtr, Guid(HasFieldMarshal), Guid(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetParent(IShellItem&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDisplayName(SIGDN): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetAttributes(SFGAO): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Compare(IShellItem, SICHINT): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface GongSolutions.Shell.Interop.IShellItemArray: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    BindToHandler(IntPtr(In), Guid(In, HasFieldMarshal), Guid(In, HasFieldMarshal), IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPropertyStore(Int32(In), Guid(In, HasFieldMarshal), IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPropertyDescriptionList(Int32(In), Guid(In, HasFieldMarshal), IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetAttributes(Int32(In), Int32(In), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetCount(UInt16&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetItemAt(UInt16(In), IShellItem&(Out, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnumItems(IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface GongSolutions.Shell.Interop.IDropTarget: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    DragEnter(IDataObject, Int32, Point, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DragOver(Int32, Point, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DragLeave(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Drop(IDataObject, Int32, Point, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GongSolutions.Shell.ShellTreeView: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Control
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    GongSolutions.Shell.Interop.IDropSource
+    GongSolutions.Shell.Interop.IDropTarget
+  Properties:
+    Boolean AllowDrop 'get set' : 
+    Boolean HotTracking 'get set' : 
+    GongSolutions.Shell.ShellItem RootFolder 'get set' : 
+    GongSolutions.Shell.ShellView ShellView 'get set' : 
+    GongSolutions.Shell.ShellItem SelectedFolder 'get set' : 
+    GongSolutions.Shell.ShowHidden ShowHidden 'get set' : 
+    System.String Text 'get set' : 
+  Events:
+    System.EventHandler SelectionChanged: 
+  Methods:
+    RefreshContents(): PrivateScope, Public, HideBySig
+    get_AllowDrop(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_AllowDrop(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_HotTracking(): PrivateScope, Public, HideBySig, SpecialName
+    set_HotTracking(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_RootFolder(): PrivateScope, Public, HideBySig, SpecialName
+    set_RootFolder(ShellItem): PrivateScope, Public, HideBySig, SpecialName
+    get_ShellView(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShellView(ShellView): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectedFolder(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectedFolder(ShellItem): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowHidden(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowHidden(ShowHidden): PrivateScope, Public, HideBySig, SpecialName
+    add_SelectionChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SelectionChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Struct GongSolutions.Shell.ShowHidden: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.ShowHidden False = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.ShowHidden True = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.ShowHidden System = 2 : Public, Static, Literal, HasDefault
+Class GongSolutions.Shell.Interop.Ole32: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Guid IID_IDataObject 'get ' : 
+    System.Guid IID_IDropTarget 'get ' : 
+  Methods:
+    CoTaskMemFree(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    DoDragDrop(IDataObject, IDropSource, DragDropEffects, DragDropEffects&(Out)): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    RegisterDragDrop(IntPtr, IDropTarget): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    RevokeDragDrop(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    get_IID_IDataObject(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IID_IDropTarget(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class GongSolutions.Shell.Interop.Kernel32: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GlobalLock(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Interface GongSolutions.Shell.Interop.IShellFolder: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    ParseDisplayName(IntPtr(In), IntPtr(In), String(In, HasFieldMarshal), UInt32&(Out), IntPtr&(Out), UInt32&(In, Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnumObjects(IntPtr(In), SHCONTF(In), IEnumIDList&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BindToObject(IntPtr, IntPtr, Guid(HasFieldMarshal), IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BindToStorage(IntPtr, IntPtr, Guid(HasFieldMarshal), IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CompareIDs(SHCIDS, IntPtr, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreateViewObject(IntPtr, Guid(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetAttributesOf(UInt32, IntPtr[](HasFieldMarshal), SFGAO&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetUIObjectOf(IntPtr, UInt32, IntPtr[](HasFieldMarshal), Guid(HasFieldMarshal), UInt32, IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDisplayNameOf(IntPtr, SHGNO, STRRET&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetNameOf(IntPtr, IntPtr, String, SHCONTF, IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct GongSolutions.Shell.Interop.CMF: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.CMF NORMAL = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CMF DEFAULTONLY = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CMF VERBSONLY = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CMF EXPLORE = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CMF NOVERBS = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CMF CANRENAME = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CMF NODEFAULT = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CMF INCLUDESTATIC = 64 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CMF EXTENDEDVERBS = 256 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CMF RESERVED = 4294901760 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.CMINVOKECOMMANDINFO: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 cbSize : Public
+    Int32 fMask : Public
+    IntPtr hwnd : Public
+    System.String lpVerb : Public
+    System.String lpParameters : Public
+    System.String lpDirectory : Public
+    Int32 nShow : Public
+    Int32 dwHotKey : Public
+    IntPtr hIcon : Public
+Struct GongSolutions.Shell.Interop.CMINVOKECOMMANDINFO_ByIndex: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 cbSize : Public
+    Int32 fMask : Public
+    IntPtr hwnd : Public
+    Int32 iVerb : Public
+    System.String lpParameters : Public
+    System.String lpDirectory : Public
+    Int32 nShow : Public
+    Int32 dwHotKey : Public
+    IntPtr hIcon : Public
+Interface GongSolutions.Shell.Interop.IContextMenu: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    QueryContextMenu(IntPtr, UInt32, Int32, Int32, CMF): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InvokeCommand(CMINVOKECOMMANDINFO&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetCommandString(Int32, UInt32, Int32, StringBuilder(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface GongSolutions.Shell.Interop.IContextMenu2: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    GongSolutions.Shell.Interop.IContextMenu
+  Methods:
+    QueryContextMenu(IntPtr, UInt32, Int32, Int32, CMF): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InvokeCommand(CMINVOKECOMMANDINFO_ByIndex&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetCommandString(Int32, UInt32, Int32, StringBuilder(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    HandleMenuMsg(Int32, IntPtr, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface GongSolutions.Shell.Interop.IContextMenu3: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    GongSolutions.Shell.Interop.IContextMenu2
+    GongSolutions.Shell.Interop.IContextMenu
+  Methods:
+    QueryContextMenu(IntPtr, UInt32, Int32, Int32, CMF): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InvokeCommand(CMINVOKECOMMANDINFO&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetCommandString(Int32, UInt32, Int32, StringBuilder(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    HandleMenuMsg(Int32, IntPtr, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    HandleMenuMsg2(Int32, IntPtr, IntPtr, IntPtr&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GongSolutions.Shell.ShellNotificationListener: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Component
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.IContainer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    GongSolutions.Shell.ShellItemEventHandler DriveAdded: 
+    GongSolutions.Shell.ShellItemEventHandler DriveRemoved: 
+    GongSolutions.Shell.ShellItemEventHandler FolderCreated: 
+    GongSolutions.Shell.ShellItemEventHandler FolderDeleted: 
+    GongSolutions.Shell.ShellItemChangeEventHandler FolderRenamed: 
+    GongSolutions.Shell.ShellItemEventHandler FolderUpdated: 
+    GongSolutions.Shell.ShellItemEventHandler ItemCreated: 
+    GongSolutions.Shell.ShellItemEventHandler ItemDeleted: 
+    GongSolutions.Shell.ShellItemChangeEventHandler ItemRenamed: 
+    GongSolutions.Shell.ShellItemEventHandler ItemUpdated: 
+    GongSolutions.Shell.ShellItemEventHandler SharingChanged: 
+  Methods:
+    add_DriveAdded(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DriveAdded(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_DriveRemoved(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DriveRemoved(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_FolderCreated(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FolderCreated(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_FolderDeleted(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FolderDeleted(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_FolderRenamed(ShellItemChangeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FolderRenamed(ShellItemChangeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_FolderUpdated(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FolderUpdated(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ItemCreated(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ItemCreated(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ItemDeleted(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ItemDeleted(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ItemRenamed(ShellItemChangeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ItemRenamed(ShellItemChangeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ItemUpdated(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ItemUpdated(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SharingChanged(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SharingChanged(ShellItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+Class GongSolutions.Shell.ShellItemEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(GongSolutions.Shell.ShellItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    GongSolutions.Shell.ShellItem Item 'get ' : 
+  Methods:
+    get_Item(): PrivateScope, Public, HideBySig, SpecialName
+Class GongSolutions.Shell.ShellItemChangeEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(GongSolutions.Shell.ShellItem, GongSolutions.Shell.ShellItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    GongSolutions.Shell.ShellItem OldItem 'get ' : 
+    GongSolutions.Shell.ShellItem NewItem 'get ' : 
+  Methods:
+    get_OldItem(): PrivateScope, Public, HideBySig, SpecialName
+    get_NewItem(): PrivateScope, Public, HideBySig, SpecialName
+Class GongSolutions.Shell.ShellItemEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ShellItemEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ShellItemEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GongSolutions.Shell.ShellItemChangeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ShellItemChangeEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ShellItemChangeEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct GongSolutions.Shell.Interop.CDBOSC: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.CDBOSC CDBOSC_SETFOCUS = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CDBOSC CDBOSC_KILLFOCUS = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CDBOSC CDBOSC_SELCHANGE = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CDBOSC CDBOSC_RENAME = 3 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.CDBOSC CDBOSC_STATECHANGE = 4 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.LVIF: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.LVIF LVIF_TEXT = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIF LVIF_IMAGE = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIF LVIF_PARAM = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIF LVIF_STATE = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIF LVIF_INDENT = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIF LVIF_GROUPID = 256 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIF LVIF_COLUMNS = 512 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIF LVIF_NORECOMPUTE = 2048 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIF LVIF_DI_SETITEM = 4096 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIF LVIF_COLFMT = 65536 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.LVIS: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.LVIS LVIS_FOCUSED = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIS LVIS_SELECTED = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIS LVIS_CUT = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIS LVIS_DROPHILITED = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIS LVIS_ACTIVATING = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIS LVIS_OVERLAYMASK = 3840 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVIS LVIS_STATEIMAGEMASK = 61440 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.LVITEMA: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    GongSolutions.Shell.Interop.LVIF mask : Public
+    Int32 iItem : Public
+    Int32 iSubItem : Public
+    GongSolutions.Shell.Interop.LVIS state : Public
+    GongSolutions.Shell.Interop.LVIS stateMask : Public
+    System.String pszText : Public, HasFieldMarshal
+    Int32 cchTextMax : Public
+    Int32 iImage : Public
+    Int32 lParam : Public
+Struct GongSolutions.Shell.Interop.LVSIL: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.LVSIL LVSIL_NORMAL = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVSIL LVSIL_SMALL = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.LVSIL LVSIL_STATE = 2 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.MENUINFO: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 cbSize : Public
+    GongSolutions.Shell.Interop.MIM fMask : Public
+    Int32 dwStyle : Public
+    Int32 cyMax : Public
+    IntPtr hbrBack : Public
+    Int32 dwContextHelpID : Public
+    Int32 dwMenuData : Public
+Struct GongSolutions.Shell.Interop.MENUITEMINFO: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 cbSize : Public
+    GongSolutions.Shell.Interop.MIIM fMask : Public
+    UInt32 fType : Public
+    UInt32 fState : Public
+    Int32 wID : Public
+    IntPtr hSubMenu : Public
+    Int32 hbmpChecked : Public
+    Int32 hbmpUnchecked : Public
+    Int32 dwItemData : Public
+    System.String dwTypeData : Public
+    UInt32 cch : Public
+    Int32 hbmpItem : Public
+Struct GongSolutions.Shell.Interop.MF: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.MF MF_BYCOMMAND = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MF MF_BYPOSITION = 1024 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.MIIM: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.MIIM MIIM_STATE = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIIM MIIM_ID = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIIM MIIM_SUBMENU = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIIM MIIM_CHECKMARKS = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIIM MIIM_TYPE = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIIM MIIM_DATA = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIIM MIIM_STRING = 64 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIIM MIIM_BITMAP = 128 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIIM MIIM_FTYPE = 256 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.MIM: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.MIM MIM_MAXHEIGHT = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIM MIM_BACKGROUND = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIM MIM_HELPID = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIM MIM_MENUDATA = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIM MIM_STYLE = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MIM MIM_APPLYTOSUBMENUS = 2147483648 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.MK: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.MK MK_LBUTTON = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MK MK_RBUTTON = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MK MK_SHIFT = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MK MK_CONTROL = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MK MK_MBUTTON = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MK MK_ALT = 4096 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.MSG: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.MSG WM_COMMAND = 273 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MSG WM_VSCROLL = 277 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MSG LVM_SETIMAGELIST = 4099 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MSG LVM_GETITEMCOUNT = 4100 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MSG LVM_GETITEMA = 4101 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MSG LVM_EDITLABEL = 4119 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MSG TVM_SETIMAGELIST = 4361 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.MSG TVM_SETITEMW = 4415 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.TPM: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.TPM TPM_LEFTBUTTON = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_RIGHTBUTTON = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_LEFTALIGN = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_CENTERALIGN = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_RIGHTALIGN = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_TOPALIGN = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_VCENTERALIGN = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_BOTTOMALIGN = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_HORIZONTAL = 0 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_VERTICAL = 64 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_NONOTIFY = 128 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_RETURNCMD = 256 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_RECURSE = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_HORPOSANIMATION = 1024 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_HORNEGANIMATION = 2048 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_VERPOSANIMATION = 4096 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_VERNEGANIMATION = 8192 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_NOANIMATION = 16384 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TPM TPM_LAYOUTRTL = 32768 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.TVIF: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.TVIF TVIF_TEXT = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIF TVIF_IMAGE = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIF TVIF_PARAM = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIF TVIF_STATE = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIF TVIF_HANDLE = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIF TVIF_SELECTEDIMAGE = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIF TVIF_CHILDREN = 64 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIF TVIF_INTEGRAL = 128 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.Interop.TVIS: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.Interop.TVIS TVIS_SELECTED = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIS TVIS_CUT = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIS TVIS_DROPHILITED = 8 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIS TVIS_BOLD = 16 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIS TVIS_EXPANDED = 32 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIS TVIS_EXPANDEDONCE = 64 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIS TVIS_EXPANDPARTIAL = 128 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIS TVIS_OVERLAYMASK = 3840 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIS TVIS_STATEIMAGEMASK = 61440 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.Interop.TVIS TVIS_USERMASK = 61440 : Public, Static, Literal, HasDefault
+Struct GongSolutions.Shell.ShellViewStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GongSolutions.Shell.ShellViewStyle LargeIcon = 1 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.ShellViewStyle SmallIcon = 2 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.ShellViewStyle List = 3 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.ShellViewStyle Details = 4 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.ShellViewStyle Thumbnail = 5 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.ShellViewStyle Tile = 6 : Public, Static, Literal, HasDefault
+    GongSolutions.Shell.ShellViewStyle Thumbstrip = 7 : Public, Static, Literal, HasDefault
+Class GongSolutions.Shell.ShellView: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Control
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.INotifyPropertyChanged
+  Properties:
+    Boolean CanCreateFolder 'get ' : 
+    Boolean CanNavigateBack 'get ' : 
+    Boolean CanNavigateForward 'get ' : 
+    Boolean CanNavigateParent 'get ' : 
+    GongSolutions.Shell.Interop.IShellView ComInterface 'get ' : 
+    GongSolutions.Shell.ShellItem CurrentFolder 'get set' : 
+    GongSolutions.Shell.ShellHistory History 'get ' : 
+    GongSolutions.Shell.ShellItem[] SelectedItems 'get ' : 
+    Boolean MultiSelect 'get set' : 
+    Boolean ShowWebView 'get set' : 
+    System.Windows.Forms.StatusBar StatusBar 'get set' : 
+    GongSolutions.Shell.ShellViewStyle View 'get set' : 
+    System.Drawing.Color BackColor 'get set' : 
+    System.Drawing.Image BackgroundImage 'get set' : 
+    System.Windows.Forms.ImageLayout BackgroundImageLayout 'get set' : 
+  Events:
+    GongSolutions.Shell.FilterItemEventHandler FilterItem: 
+    System.EventHandler Navigated: 
+    GongSolutions.Shell.NavigatingEventHandler Navigating: 
+    System.EventHandler SelectionChanged: 
+  Methods:
+    CreateNewFolder(): PrivateScope, Public, HideBySig
+    DeleteSelectedItems(): PrivateScope, Public, HideBySig
+    Navigate(ShellItem): PrivateScope, Public, HideBySig
+    Navigate(String): PrivateScope, Public, HideBySig
+    Navigate(SpecialFolder): PrivateScope, Public, HideBySig
+    NavigateBack(): PrivateScope, Public, HideBySig
+    NavigateBack(ShellItem): PrivateScope, Public, HideBySig
+    NavigateForward(): PrivateScope, Public, HideBySig
+    NavigateForward(ShellItem): PrivateScope, Public, HideBySig
+    NavigateParent(): PrivateScope, Public, HideBySig
+    NavigateSelectedFolder(): PrivateScope, Public, HideBySig
+    RefreshContents(): PrivateScope, Public, HideBySig
+    RenameSelectedItem(): PrivateScope, Public, HideBySig
+    SelectAll(): PrivateScope, Public, HideBySig
+    get_CanCreateFolder(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanNavigateBack(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanNavigateForward(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanNavigateParent(): PrivateScope, Public, HideBySig, SpecialName
+    get_ComInterface(): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentFolder(): PrivateScope, Public, HideBySig, SpecialName
+    set_CurrentFolder(ShellItem): PrivateScope, Public, HideBySig, SpecialName
+    get_History(): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectedItems(): PrivateScope, Public, HideBySig, SpecialName
+    get_MultiSelect(): PrivateScope, Public, HideBySig, SpecialName
+    set_MultiSelect(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowWebView(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowWebView(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_StatusBar(): PrivateScope, Public, HideBySig, SpecialName
+    set_StatusBar(StatusBar): PrivateScope, Public, HideBySig, SpecialName
+    get_View(): PrivateScope, Public, HideBySig, SpecialName
+    set_View(ShellViewStyle): PrivateScope, Public, HideBySig, SpecialName
+    add_FilterItem(FilterItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FilterItem(FilterItemEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Navigated(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Navigated(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Navigating(NavigatingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Navigating(NavigatingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SelectionChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SelectionChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_BackColor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BackgroundImage(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImage(Image): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BackgroundImageLayout(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImageLayout(ImageLayout): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    PreProcessMessage(Message&): PrivateScope, Public, Virtual, HideBySig
+Class GongSolutions.Shell.FilterItemEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    Boolean Include 'get set' : 
+    GongSolutions.Shell.ShellItem Item 'get ' : 
+  Methods:
+    get_Include(): PrivateScope, Public, HideBySig, SpecialName
+    set_Include(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(): PrivateScope, Public, HideBySig, SpecialName
+Class GongSolutions.Shell.NavigatingEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(GongSolutions.Shell.ShellItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Cancel 'get set' : 
+    GongSolutions.Shell.ShellItem Folder 'get set' : 
+  Methods:
+    get_Cancel(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cancel(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Folder(): PrivateScope, Public, HideBySig, SpecialName
+    set_Folder(ShellItem): PrivateScope, Public, HideBySig, SpecialName
+Class GongSolutions.Shell.UserAbortException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Runtime.InteropServices.ExternalException
+    Void .ctor(System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GongSolutions.Shell.FilterItemEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, FilterItemEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, FilterItemEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GongSolutions.Shell.NavigatingEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, NavigatingEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, NavigatingEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GongSolutions.Shell.ShellHistory: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    GongSolutions.Shell.ShellItem[] HistoryBack 'get ' : 
+    GongSolutions.Shell.ShellItem[] HistoryForward 'get ' : 
+  Methods:
+    Clear(): PrivateScope, Public, HideBySig
+    get_HistoryBack(): PrivateScope, Public, HideBySig, SpecialName
+    get_HistoryForward(): PrivateScope, Public, HideBySig, SpecialName

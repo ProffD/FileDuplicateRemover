@@ -1,0 +1,12 @@
+﻿  Main.cpp
+d:\his stuff\projects\visual studio projects\filematcher\filematcher\mainform.h(515): warning C4101: 'e': unreferenced local variable
+d:\his stuff\projects\visual studio projects\filematcher\filematcher\mainform.h(524): warning C4101: 'e': unreferenced local variable
+d:\his stuff\projects\visual studio projects\filematcher\filematcher\mainform.h(612): warning C4101: 'e': unreferenced local variable
+d:\his stuff\projects\visual studio projects\filematcher\filematcher\mainform.h(621): warning C4101: 'e': unreferenced local variable
+  MainForm.cpp
+d:\his stuff\projects\visual studio projects\filematcher\filematcher\mainform.h(515): warning C4101: 'e': unreferenced local variable
+d:\his stuff\projects\visual studio projects\filematcher\filematcher\mainform.h(524): warning C4101: 'e': unreferenced local variable
+d:\his stuff\projects\visual studio projects\filematcher\filematcher\mainform.h(612): warning C4101: 'e': unreferenced local variable
+d:\his stuff\projects\visual studio projects\filematcher\filematcher\mainform.h(621): warning C4101: 'e': unreferenced local variable
+  Generating Code...
+  FileMatcher.vcxproj -> D:\His Stuff\Projects\Visual Studio Projects\FileMatcher\Debug\FileMatcher.exe
